@@ -95,7 +95,7 @@
 
   <div class="container">
 
-    <p class="meta">Privacy Policy &nbsp;·&nbsp; Effective Date: April 1, 2026 &nbsp;·&nbsp; Last Updated: April 1, 2026</p>
+    <p class="meta">Privacy Policy &nbsp;·&nbsp; Effective Date: April 1, 2026 &nbsp;·&nbsp; Last Updated: April 22, 2026</p>
 
     <p>Impulse ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and your rights as a user of the Impulse mobile application ("App").</p>
 
@@ -103,10 +103,11 @@
     <p>We collect the following types of information when you use the App:</p>
     <ul>
       <li><strong>Account Information:</strong> When you sign in with Google, we receive your name, email address, and profile photo from your Google account.</li>
-      <li><strong>Location Data:</strong> We collect your device's GPS location to show deals near you. Location is used in real time and is not stored on our servers.</li>
-      <li><strong>Device Token:</strong> We store a Firebase Cloud Messaging (FCM) token on our servers to send you push notifications about price drops and new deals.</li>
-      <li><strong>Deal Activity:</strong> When you track a deal or post a deal, that information (including any photos you upload) is stored in our database.</li>
-      <li><strong>Usage Data:</strong> Basic app usage information may be collected by Firebase Analytics to help us improve the App.</li>
+      <li><strong>Location Data:</strong> We collect your device's approximate and precise location (via GPS, Wi-Fi, or cellular signals) to show deals near you. Location access is requested via Android's standard permission prompt and is used in real time. We do not store your location history on our servers.</li>
+      <li><strong>Camera and Photo Library Access:</strong> When you post a deal with your own image, we request access to your device's camera (if you tap "Take Photo") or your photo library (if you tap "Choose from Gallery"). These permissions are requested via Android's standard prompts and are only accessed when you explicitly take that action. Photos you select are uploaded to our servers and stored as part of your deal posting. We do not access, scan, or upload any other photos, files, or media from your device.</li>
+      <li><strong>Device Token:</strong> If you grant notification permission, we store a Firebase Cloud Messaging (FCM) token on our servers to send you push notifications about price drops and new deals.</li>
+      <li><strong>Deal Activity:</strong> When you track, post, confirm, or flag a deal, that activity (including deal title, price, store, URL, and any photo you uploaded) is stored in our database and associated with your account.</li>
+      <li><strong>Usage Data:</strong> Basic app usage information (such as screens viewed, features used, and crash reports) may be collected by Firebase Analytics to help us improve the App. This data is aggregated and does not identify you personally.</li>
     </ul>
 
     <h2>2. How We Use Your Information</h2>
@@ -114,48 +115,59 @@
     <ul>
       <li>Provide and personalize the Impulse experience</li>
       <li>Show you deals relevant to your location and preferences</li>
-      <li>Send you push notifications about price drops and new deals (only if you opt in)</li>
-      <li>Allow you to post, track, and share deals with the community</li>
-      <li>Improve the App based on usage patterns</li>
+      <li>Send you push notifications about price drops and new deals (only if you grant notification permission)</li>
+      <li>Allow you to post, track, confirm, flag, and share deals with the community</li>
+      <li>Improve the App based on usage patterns and crash reports</li>
     </ul>
 
-    <h2>3. Data Storage and Security</h2>
-    <p>Your data is stored securely using Google Firebase, including Firebase Authentication, Cloud Firestore, and Firebase Storage. All data is transmitted over encrypted HTTPS connections. We implement reasonable security measures to protect your information from unauthorized access.</p>
+    <h2>3. Permissions We Request</h2>
+    <p>Impulse requests the following Android permissions, each with a specific purpose:</p>
+    <ul>
+      <li><strong>Location (Fine and Coarse):</strong> To show deals near your current location. You can deny or later revoke this permission at any time through your device settings.</li>
+      <li><strong>Camera:</strong> To let you take a new photo when posting a deal. Camera is only activated when you explicitly tap "Take Photo."</li>
+      <li><strong>Photos and Media / Storage:</strong> To let you select an existing photo from your device when posting a deal. We only access the photo you explicitly select.</li>
+      <li><strong>Notifications:</strong> To send you alerts about price drops and new deals. You can disable notifications at any time through your device settings.</li>
+      <li><strong>Internet:</strong> To communicate with our servers, load deal data, and upload your content.</li>
+    </ul>
+    <p>All permission prompts are shown by Android at the moment the feature is used. You are never required to grant a permission unless you wish to use the corresponding feature.</p>
 
-    <h2>4. Data Sharing</h2>
+    <h2>4. Data Storage and Security</h2>
+    <p>Your data is stored securely using Google Firebase, including Firebase Authentication, Cloud Firestore, and Firebase Storage. All data is transmitted over encrypted HTTPS connections. We implement reasonable security measures to protect your information from unauthorized access, alteration, or disclosure.</p>
+
+    <h2>5. Data Sharing</h2>
     <p>We do not sell, rent, or share your personal information with third parties for marketing purposes. We may share data only in the following circumstances:</p>
     <ul>
       <li><strong>Service Providers:</strong> We use Google Firebase to store and process data. Google's privacy policy applies to their services.</li>
       <li><strong>Legal Requirements:</strong> We may disclose information if required by law or to protect the rights and safety of our users.</li>
     </ul>
 
-    <h2>5. Push Notifications</h2>
-    <p>If you grant permission, Impulse may send you push notifications about price drops on deals you are tracking, new deals in your area, and app updates. You can disable notifications at any time through your device's Settings app.</p>
+    <h2>6. Push Notifications</h2>
+    <p>If you grant notification permission, Impulse may send you push notifications about price drops on deals you are tracking, new deals in your area, and app updates. You can disable notifications at any time through your device's Settings app or through Android's notification controls.</p>
 
-    <h2>6. Children's Privacy</h2>
+    <h2>7. Children's Privacy</h2>
     <p>Impulse is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
 
-    <h2>7. Your Rights</h2>
+    <h2>8. Your Rights</h2>
     <p>Depending on your location, you may have the right to:</p>
     <ul>
       <li>Access the personal data we hold about you</li>
       <li>Request deletion of your account and associated data</li>
       <li>Opt out of push notifications at any time</li>
-      <li>Withdraw consent for location access through your device settings</li>
+      <li>Withdraw consent for location, camera, or photo access through your device settings</li>
     </ul>
     <p>To request account deletion or data access, please contact us at the email below.</p>
 
-    <h2>8. Third-Party Services</h2>
+    <h2>9. Third-Party Services</h2>
     <p>The App uses the following third-party services, each with their own privacy policies:</p>
     <ul>
-      <li><a href="https://firebase.google.com/support/privacy" target="_blank">Google Firebase</a> — Authentication, database, storage, and notifications</li>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank">Google Firebase</a> — Authentication, database, storage, analytics, and notifications</li>
       <li><a href="https://policies.google.com/privacy" target="_blank">Google Sign-In</a> — Account authentication</li>
     </ul>
 
-    <h2>9. Changes to This Policy</h2>
+    <h2>10. Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the "Last Updated" date at the top of this page. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
 
-    <h2>10. Contact Us</h2>
+    <h2>11. Contact Us</h2>
     <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
     <p><strong>Email:</strong> <a href="mailto:phani.peddibhotla@gmail.com">phani.peddibhotla@gmail.com</a></p>
 
